@@ -1,8 +1,16 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "The Project for practise how to make better sofware developer porfolio by using HTML and Css",
   "main": "index.js",
+  "dependencies": {
+    "hint": "^6.1.9",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "stylelint": "^13.13.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,18 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/YvesGanza/Portfolio.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Yves",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YvesGanza/Portfolio/issues"
   },
-  "homepage": "https://github.com/YvesGanza/Portfolio#readme",
-  "devDependencies": {
-    "hint": "^6.1.9",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  }
+  "homepage": "https://github.com/YvesGanza/Portfolio#readme"
 }

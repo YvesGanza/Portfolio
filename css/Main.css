@@ -1,215 +1,263 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/* Customer Property and Main Set up ---------------------------*/
-:root{
-    --main-bg-color:#191765;
-    --second-color:white;
-    --main-heading-color: #7d73fc;
-    --enable-button:#7d73fc;
-    --disable-button:#2a2b33;
-    --pressed-button:#5e42d7;
-    --hover-button:#7d73fc;
+/* Customer Property and Main Set up --------------------------- */
+:root {
+  --main-bg-color: #191765;
+  --second-color: white;
+  --main-heading-color: #7d73fc;
+  --enable-button: #7d73fc;
+  --disable-button: #2a2b33;
+  --pressed-button: #5e42d7;
+  --hover-button: #7d73fc;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family:'Roboto', sans-serif;
-    line-height: 1.6;
-    font-size:13px;
-    min-height:100vh;
-    background-color:var(--main-bg-color);
-    color:var(--second-color);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-size: 13px;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  color: var(--second-color);
 }
-.Main_Container{
-    max-width: 1100px;
-    margin:0 auto;
-    overflow:auto;
-    padding:20px;
+
+.Main_Container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 20px;
 }
-img{
-    display:block;
-    object-fit:cover;
-    width:100%;
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
-button{
-    font-family:'Roboto', sans-serif;
-    outline:none;
-    border:none;
-    cursor:pointer;
-    background-color:var(--enable-button);
-    color:var(--second-color);
-    padding:10px;
+
+button {
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--enable-button);
+  color: var(--second-color);
+  padding: 10px;
 }
-button:hover{
-    background-color:var(--hover-button);
-    box-shadow:0 3px 10px rgba(0, 0, 0, 0.2);
+
+button:hover {
+  background-color: var(--hover-button);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-button:active{
-    background-color:var(--main-bg-color);
+
+button:active {
+  background-color: var(--main-bg-color);
 }
-input, textarea{
-    font-family:'Roboto', sans-serif;
-    outline:none;
-    font-size:12px;
+
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  font-size: 12px;
 }
-h1, h2,h3,h4{
-    color:var(--main-heading-color);
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--main-heading-color);
 }
-a{
-    text-decoration: none;
-    color:var(--second-color);
+
+a {
+  text-decoration: none;
+  color: var(--second-color);
 }
-/*  General Mobile Size Set up---------------------------*/
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+/*  General Mobile Size Set up--------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav i{
-    padding:10px;
+
+nav i {
+  padding: 10px;
 }
-.Home_Banner{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
+
+.Home_Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
+
 .Home_Title {
-    margin:30px 0px;
-}
-.Home_Title h1{
-    font-size:38px;
-}
-.Home_Title p{
-    font-size:25px;
-    font-weight:500;
-}
-.Home_Text{
-    border-bottom:1px solid #646369;
-    padding-bottom:20px;
-}
-/*  Skills Sections ---------------------------*/
-.Skills_Main{
-    display: flex;
-    flex-wrap:wrap;
-    margin-top:40px;
-    border-bottom:1px solid #646369;
-    padding-bottom:20px;
-}
-.Skills_Box{
-    margin:20px;
-    flex:1 1 30%;
-}
-.Skills_Box h2{
-    font-weight:300px;
-    font-size:13px;
-}
-.Skills_Titles{
-    margin-bottom:10px;
-}
-/*  Social Sections ---------------------------*/
-.Social_Icon{
-    display:flex;
-    flex-direction:column;
-   align-items:center;
-   margin-top:10px;
-}
-.Social_List{
-    display:flex;
-}
-.Social_List i{
-    margin:10px;
-}
-.MoreSocial{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.MoreSocial i{
-    display:flex;
-    margin:10px ;
+  margin: 30px 0;
 }
 
-/*  Recent work Sections ---------------------------*/
-.Recent_Work{
-    margin:30px 0px;
-}
-.Image_Box{
-    position:relative;
-    overflow:hidden;
-}
-.Post_Box{
-    margin-top: 20px;
-}
-.Post_Box h2{
-    color:var(--second-color);
-    margin-bottom:20px;
-    text-align:justify;
-}
-.Post_Box p{
-    margin-bottom:20px;
-}
-.Link_Box{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    margin-bottom:20px;
-}
-.Link_Box p{
-    margin:5px;
-    border-right:1px solid #646369;
-    flex-grow:1;
-}
-.Btn_Box{
-    margin:30px 0px;
-}
-/*  Contact  Sections ---------------------------*/
-.Contact_Main{
-    margin:30px 0px;
-}
-.Contact_Main .Let_Chart{
-    display:none;
-}
-.Contact_Main h2{
-    text-align: center;
-    margin: 20px 0px;
-}
-.Contact_Message{
-    text-align:center;
+.Home_Title h1 {
+  font-size: 38px;
 }
 
-/* Forms Sections ------------------------------*/
-.Form_TextBox_Top{
-    display:flex;
-    flex-direction:column;
+.Home_Title p {
+  font-size: 25px;
+  font-weight: 500;
 }
-.Form_TextBox_Middle{
-    display:flex;
-    flex-direction:column;
-}
-.Form_TextBox_Top input, .Form_TextBox_Middle input, .Form_TextBox_Middle textarea{
-    margin:6px 0px;
-    padding:8px;
 
+.Home_Text {
+  border-bottom: 1px solid #646369;
+  padding-bottom: 20px;
 }
-.Form_ButtonBox{
-    display:flex;
-    justify-content:center;
-    margin:30px 0px;
+
+/*  Skills Sections --------------------------- */
+.Skills_Main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  border-bottom: 1px solid #646369;
+  padding-bottom: 20px;
 }
-.Footer_Social_Icon{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+
+.Skills_Box {
+  margin: 20px;
+  flex: 1 1 30%;
 }
-.Footer_Social_Icon i{
-    margin:0px 20px;
+
+.Skills_Box h2 {
+  font-weight: 300;
+  font-size: 13px;
 }
-.Footer_Emails{
-    text-align:center;
+
+.Skills_Titles {
+  margin-bottom: 10px;
+}
+
+/*  Social Sections --------------------------- */
+.Social_Icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Social_List {
+  display: flex;
+}
+
+.Social_List i {
+  margin: 10px;
+}
+
+.MoreSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MoreSocial i {
+  display: flex;
+  margin: 10px;
+}
+
+/*  Recent work Sections --------------------------- */
+.Recent_Work {
+  margin: 30px 0;
+}
+
+.Image_Box {
+  position: relative;
+  overflow: hidden;
+}
+
+.Post_Box {
+  margin-top: 20px;
+}
+
+.Post_Box h2 {
+  color: var(--second-color);
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.Post_Box p {
+  margin-bottom: 20px;
+}
+
+.Link_Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Link_Box p {
+  margin: 5px;
+  border-right: 1px solid #646369;
+  flex-grow: 1;
+}
+
+.Btn_Box {
+  margin: 30px 0;
+}
+
+/*  Contact  Sections --------------------------- */
+.Contact_Main {
+  margin: 30px 0;
+}
+
+.Contact_Main .Let_Chart {
+  display: none;
+}
+
+.Contact_Main h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.Contact_Message {
+  text-align: center;
+}
+
+/* Forms Sections ------------------------------ */
+.Form_TextBox_Top {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form_TextBox_Middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form_TextBox_Top input,
+.Form_TextBox_Middle input,
+.Form_TextBox_Middle textarea {
+  margin: 6px 0;
+  padding: 8px;
+}
+
+.Form_ButtonBox {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.Footer_Social_Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Footer_Social_Icon i {
+  margin: 0 20px;
+}
+
+.Footer_Emails {
+  text-align: center;
 }
